@@ -1,0 +1,52 @@
+step 13:  Go to 'Pages' folder and open 'Login.js' & type
+  import React from 'react'
+
+export const Login = () => {
+  return (
+    <div className='login'>
+<h1>Register</h1>
+    <input type="text" placeholder='Enter Name'></input>
+    <input type="text" placeholder='Enter Surname'></input>
+    <input type="text" placeholder='Enter Age'></input>
+    <select>
+    <option value="Please select">Please select</option>
+<option value="Male">Male</option>
+<option value="Female">Female</option>
+
+    </select>
+    <button>Submit</button>
+    </div>
+  )
+}
+
+
+step 14:  Go to 'Pages' folder and open 'Aboutedu.js' ' & type:
+import { About } from "../../Components/About"
+
+
+export const Aboutedu = () => {
+  return (
+    <div className="abt">
+    <img src="/images/abt.jpg" alt=""></img>
+    <About />
+    
+    </div>
+  )
+}
+
+
+step 14:  Go to 'Pages' folder and open 'Contactedu.js' ' & type:
+  
+import {Contact} from "../../Components/Contact"
+export const Contactedu = () => {
+  return (
+    <div className="cont">
+  <img src="/images/contact.webp" alt=""></img>
+
+<Contact />
+
+
+
+    </div>
+  )
+}
