@@ -1,0 +1,91 @@
+step 5: Create a folder named 'Components' under the 'src' folder
+step 5.1: Inside the 'Components' folder, create a file named 'Navbar.js', 'Contact.js' , 'About.js' 
+
+step 6:  Create a folder named 'Pages' under under the 'src' folder
+step 6.1: Inside the 'Pages' folder, create folders named 
+      'Home' and store a newly created file named 'Home.js'
+      'About' and store a newly created file named 'Aboutedu.js'
+      'Contact' and store a newly created file named 'Contactedu.js'
+      'Login' and store a newly created file named 'Login.js'
+
+step 7: On the terminal, type npm i react-router-dom
+step 8: Go to the 'Navbar.js' file and type:
+ 
+ import {Link} from "react-router-dom";
+export default function Navbar() {
+    
+    return(
+   
+         <nav>
+   <Link className="navLinks" to="/">
+        Home
+   </Link>
+   <Link className="navLinks" to="/About">
+   About Us
+   </Link>
+   <Link className="navLinks" to="/Login">
+        Login
+   </Link>
+}
+step 9: Go to the 'App.js' file and type:
+   
+import './App.css';
+
+import { Navbar } from './Components/Navbar';
+import {Routes,Route} from 'react-router-dom'
+import { Home } from './Pages/Home/Home';
+import { Aboutedu } from './Pages/About/Aboutedu';
+
+import { Login } from './Pages/Login/Login';
+import { Contactedu } from './Pages/Contact/Contactedu';
+
+
+
+function App() {
+  return (
+    <div className="App">
+      <Navbar />
+     <Routes>
+     <Route path='/' element={ <Home /> }  />
+     <Route path='/Aboutedu' element={<Aboutedu />}  />
+     <Route path='/Contactedu' element={<Contactedu />}  />
+     <Route path='/Login' element={<Login  />}  />
+    </Routes>
+    </div>
+  );
+}
+
+export default App;
+
+ step 10: Go to 'Components folder and open 'Contact.js'
+ 
+
+export const Contact = () => {
+  return (
+    <div className="contact"><h1>Contact Us</h1>
+    
+    <p>You can get us here......</p>
+    
+    
+    <p>Phone: 01234567</p><br><p>Email: educapedia@hy.co.za</p></br>
+    
+    </div>
+  );
+}
+
+ step 12:  Go to 'Components folder and open 'About.js'
+ 
+
+export const About = () => {
+  return (
+    <div className="about">
+        <h1>About Edu</h1>
+    
+   
+    <p>Edu........</p.
+    </div>
+  )
+}
+
+ 
+ 
