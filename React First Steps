@@ -1,0 +1,8 @@
+Step 1: Create a new folder
+step 2: Open the folder using vs code
+step 3: Open a new terminal and type 
+     npx create-react-app tutorial1  
+     cd tutorial1 
+     start npm
+     
+    A page will load on Chrome to show that the code is working
