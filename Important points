@@ -1,0 +1,7 @@
+for making a function publictly accessable anywhere in your system 
+    [
+     export default function App()
+    ]
+In react we use 'className' insteadof just 'class' to declare function names.
+
+It is important to import a function if you will be using it on the file, you're currently working on. 
