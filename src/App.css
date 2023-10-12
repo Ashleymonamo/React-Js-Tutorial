@@ -1,0 +1,124 @@
+.App {
+  text-align: center;
+ 
+  
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+nav{
+  background: rgb(226, 156, 105);
+  position: relative;
+  width: 100vw;
+  padding: 20px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: row;
+}
+.navLinks
+{
+  margin-left: 20px;
+ color: white;
+  text-decoration: none;
+}
+.advert img{
+  width: 100vw;
+  height: 80vh;
+ 
+
+}
+.footer
+{ width: 100%;
+  height: 200px;
+  background-color: gray;
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+  align-items: center;
+ 
+}
+.footer .part
+{
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+
+
+
+}
+.footerTag
+{
+  color: white;
+  text-decoration: none;
+}
+.footerTag a:hover
+{
+  color: black;
+  text-decoration: underline;
+}
+.inputs
+{
+display: flex;
+flex-direction: column;
+
+align-items: center;
+justify-content: center;
+
+}
+.inputs input,select
+{
+  padding: 5px;
+  border-radius: 20px;
+  outline: 0;
+  margin-top: 20px;
+  
+}
+.inputs select
+{
+  width: 180px;
+}
+.inputs button
+{
+  padding: 5px;
+  margin-top: 5px;
+  border-radius: 10px;
+  width: 120px;
+  background-color: skyblue;
+  color: white;
+  outline: 0;
+  border: 1px solid rgb(39, 94, 116);
+}
